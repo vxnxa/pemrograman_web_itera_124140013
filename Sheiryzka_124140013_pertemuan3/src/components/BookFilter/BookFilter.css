@@ -1,0 +1,6 @@
+.book-filter { 
+    display: grid; 
+    grid-template-columns: 2fr 1fr; 
+    gap: .6rem; 
+    margin-bottom: 12px; 
+}

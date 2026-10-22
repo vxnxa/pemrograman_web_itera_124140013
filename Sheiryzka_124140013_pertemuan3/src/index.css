@@ -1,0 +1,102 @@
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+:root {
+  --bg: #0d1117;
+  --card: #161b22;
+  --border: #30363d;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --primary: #58a6ff;
+  --danger: #f85149;
+  --success: #3fb950;
+  --warning: #d29922;
+}
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 32px;
+  background: linear-gradient(135deg, #010736, #FCF1D0);
+}
+.header p { 
+  opacity: .85; 
+  margin-top: 4px; 
+}
+.header nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, .75);
+  font-weight: 600;
+  padding-bottom: 4px;
+}
+.header nav a.active { 
+  color: var(--border); 
+  border-bottom: 2px solid var(--card); 
+}
+
+.container { 
+  max-width: 960px; 
+  margin: 24px auto; 
+  padding: 0 16px; 
+  display: grid; 
+  gap: 16px; 
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+.card h2 { 
+  font-size: 1.05rem; 
+  margin-bottom: 12px; 
+}
+.card:hover {
+    transform: translateY(-4px);               
+    background: rgba(30, 41, 59, 0.9);        
+    border-color: rgba(99, 102, 241, 0.5);    
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35),
+              0 0 0 1px rgba(99, 102, 241, 0.2);
+}
+input, select, button {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: .95rem;
+}
+input { width: 100%; }
+button {
+  cursor: pointer;
+  background: var(--primary);
+  color: #0d1117;
+  font-weight: 600;
+  border: none;
+}
+button:hover { opacity: .85; }
+button.secondary { background: var(--muted); }
+button.danger { 
+  background: var(--danger); 
+  color: #fff; 
+}
+
+@media (max-width: 640px) {
+  .header { 
+    flex-direction: column; 
+    text-align: center; 
+  }
+  .header nav a { margin: 0 .5rem; }
+}

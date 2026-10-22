@@ -1,0 +1,19 @@
+.book-list { list-style: none; display: grid; gap: 8px; }
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.book-item p { margin: 2px 0 6px; color: var(--muted); font-size: .85rem; }
+.item-actions { display: flex; gap: .4rem; }
+.item-actions button { padding: 6px 10px; font-size: .8rem; }
+.item-actions button:not(.danger) { background: var(--warning); }
+.badge { font-size: .75rem; padding: 2px 8px; border-radius: 99px; }
+.badge-milik { background: #3fb95033; color: var(--success); }
+.badge-baca { background: #d2992233; color: var(--warning); }
+.badge-beli { background: #1f6feb33; color: var(--primary); }
+.empty { text-align: center; color: var(--muted); padding: 24px; }

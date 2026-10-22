@@ -1,0 +1,27 @@
+.book-form { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+    gap: .8rem; 
+    align-items: end; 
+}
+.field { 
+    display: flex; 
+    flex-direction: column; 
+    gap: .3rem; 
+}
+.field label { 
+    font-size: .85rem; 
+    color: var(--muted); 
+}
+.input-error { 
+    border-color: var(--danger); 
+    background: #f8514922; 
+}
+.error-text { 
+    color: var(--danger); 
+    font-size: .8rem; 
+}
+.actions { 
+    display: flex; 
+    gap: .5rem; 
+}
