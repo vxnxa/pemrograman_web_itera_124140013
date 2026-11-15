@@ -50,5 +50,5 @@ python main.py
 (Gunakan `python3` atau `py` jika `python` tidak dikenali.)
 
 ## Screenshot Output
-![Output 1](screenshots/output1.png)
-![Output 2](screenshots/output2.png)
+![alt text](screenshots/image.png)
+![alt text](screenshots/image-1.png)
