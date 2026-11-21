@@ -1,0 +1,7 @@
+alembic<2,>=1.13
+psycopg2-binary<3,>=2.9
+pyramid<3,>=2.0
+pyramid-tm<3,>=2.5
+SQLAlchemy<3,>=2.0
+waitress<4,>=3.0
+zope.sqlalchemy<4,>=3.1

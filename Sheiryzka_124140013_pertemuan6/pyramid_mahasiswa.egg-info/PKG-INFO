@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: pyramid-mahasiswa
+Version: 0.1.0
+Summary: RESTful API mahasiswa dan mata kuliah dengan Pyramid
+Requires-Dist: alembic<2,>=1.13
+Requires-Dist: psycopg2-binary<3,>=2.9
+Requires-Dist: pyramid<3,>=2.0
+Requires-Dist: pyramid-tm<3,>=2.5
+Requires-Dist: SQLAlchemy<3,>=2.0
+Requires-Dist: waitress<4,>=3.0
+Requires-Dist: zope.sqlalchemy<4,>=3.1
+Dynamic: requires-dist
+Dynamic: summary
